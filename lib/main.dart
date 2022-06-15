@@ -1,4 +1,3 @@
-import 'package:demo1/chapter2.dart';
 import 'package:demo1/chapter5.dart';
 import 'package:demo1/drawer.dart';
 import 'package:flutter/material.dart';
