@@ -8,8 +8,8 @@ class Chapter5 extends StatefulWidget {
 }
 
 class _Chapter5State extends State<Chapter5> {
-  static TextEditingController textEditingController = TextEditingController();
-  static String change_me_text = "Change me";
+  TextEditingController textEditingController = TextEditingController();
+  var changeMeText = "Change me";
 
 
   @override
@@ -30,7 +30,7 @@ class _Chapter5State extends State<Chapter5> {
               const SizedBox(
                 height: 20,
               ),
-              Text(change_me_text, style: TextStyle(fontSize: 25)),
+              Text(changeMeText, style: TextStyle(fontSize: 25)),
               const SizedBox(
                 height: 20,
               ),
@@ -57,7 +57,7 @@ class _Chapter5State extends State<Chapter5> {
                       color: Colors.blue[200],
                       child: Center(child: const Text("Click to Change"))),
                   onTap: (){
-                    change_me_text = textEditingController.text;
+                    changeMeText = textEditingController.text;
                     setState((){});
                   },
                 ),
