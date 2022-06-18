@@ -24,6 +24,12 @@ class _HomePageFBState extends State<HomePageFB> {
     return data;
   }
 
+  Stream<List<String>> getSteamData(){
+    var data = Stream<List<String>>.fromIterable(
+      [List<String>.generate(20, (index) => "Item $index")]);
+    return data;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
