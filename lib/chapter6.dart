@@ -35,7 +35,7 @@ class _Chapter6State extends State<Chapter6> {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: ListTile(
+                    child:  ListTile(
                       title: Text(data[index]["title"]),
                       leading: Image.network(data[index]["url"]),
                       subtitle: Text("ID: ${data[index]["id"]}"),
