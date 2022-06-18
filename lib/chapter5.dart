@@ -1,3 +1,4 @@
+import 'package:demo1/bg_image.dart';
 import 'package:flutter/material.dart';
 
 class Chapter5 extends StatefulWidget {
@@ -26,7 +27,7 @@ class _Chapter5State extends State<Chapter5> {
           color: Colors.white,
           child: Column(
             children: [
-              Image.asset("assets/bg.jpg", fit: BoxFit.cover),
+              BgImage(),
               const SizedBox(
                 height: 20,
               ),

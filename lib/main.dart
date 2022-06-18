@@ -1,5 +1,5 @@
-import 'package:demo1/chapter6.dart';
-import 'package:demo1/drawer.dart';
+import 'package:demo1/login/Login.dart';
+import 'package:demo1/login/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,19 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Hello Demo",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        backgroundColor: Colors.grey[200],
-        appBar: AppBar(
-          title: const Text("Hello Demo"),
-        ),
-        body: const Chapter6(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-          },
-          child: const Icon(Icons.qr_code_scanner),
-        ),
-        drawer: const drawer(),
-      ),
+      home: const LoginPage(),
     );
   }
 }
